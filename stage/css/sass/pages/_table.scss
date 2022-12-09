@@ -1,0 +1,74 @@
+.table__wrapper {
+  padding: 20px;
+  table {
+    min-width: 100%;
+    width: auto;
+    border-collapse: collapse;
+    /* These are just initial values which are overriden using JavaScript when a column is resized */
+  }
+  thead,
+  th,
+  td {
+    padding: 15px;
+    white-space: pre-wrap;
+    text-align: center;
+  }
+  td.nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  th {
+    position: sticky;
+    top: 0;
+    font-weight: normal;
+    font-size: 1.1rem;
+    position: relative;
+    text-align: center;
+    &.day,
+    &.numeric,
+    &.times {
+      width: 70px;
+    }
+  }
+  th,
+  td.day {
+    color: white;
+    background: #6c7ae0;
+    font-weight: bold;
+  }
+  td.day {
+    border-bottom: 2px solid #cacaca;
+    .rotate {
+      transform: rotate(-90deg);
+    }
+  }
+  th:last-child {
+    border: 0;
+  }
+  td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #808080;
+  }
+  tr {
+    &:nth-child(even) {
+      background: #f8f6ff;
+    }
+    &:nth-child(10n) td,
+    td.last_rowspan {
+      border-bottom: 2px solid #cacaca;
+    }
+  }
+  td:not(.day) {
+    border: 1px solid #e3e3e3;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 900px;
+}

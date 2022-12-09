@@ -1,0 +1,32 @@
+{
+  "name": "MAM_Table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-install": "^1.1.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "static-server": "^2.2.1"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 2%"
+  ]
+}
